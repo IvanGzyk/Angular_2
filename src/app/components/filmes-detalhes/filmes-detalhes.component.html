@@ -1,0 +1,20 @@
+<h1>
+  {{ filme.nome }}
+</h1>
+<h5>Genero</h5>
+<p>
+  {{ filme.filmeGenero }}
+</p>
+<h5>Dirigido por:</h5>
+<p>
+  {{ filme.diretor}}
+</p>
+<p>
+  <a href="{{ filme.urlTraller }}">
+    <img src="{{ filme.urlFilmeImg }}" style="width: 50px;">
+  </a>
+</p>
+<p>
+  <iframe width="560" height="315" src="{{ filme.urlTraller }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+

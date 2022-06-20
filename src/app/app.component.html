@@ -1,3 +1,10 @@
-<nav></nav>
+<nav>
+  <app-filmes (filmeSelecionado)="exibeFilme($event)"></app-filmes>
+</nav>
+<main *ngIf="filmeParaExibir">
+  <app-filmes-detalhes [filme]="filmeParaExibir">
+
+  </app-filmes-detalhes>
+</main>
 
 <router-outlet></router-outlet>

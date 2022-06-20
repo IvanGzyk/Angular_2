@@ -1,0 +1,10 @@
+
+<h1 class="titulo">Filmes em Cartaz!!!</h1>
+<div class="filmes">
+  <button
+  *ngFor="let filme of (filmes$ | async)"
+  (click)="selecionaFilme(filme)"
+  type="button">
+    {{ filme.nome }}
+  </button>
+</div>
